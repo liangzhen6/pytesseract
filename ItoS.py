@@ -20,7 +20,7 @@ def initTable(threshold=140):
 	return table
 
 
-# image = Image.open('zw08.jpeg')
+image = Image.open('zw08.jpeg')
 w, h = image.size
 print(w,h)
 image = image.convert('L') #将彩色图片转换成灰度图片
@@ -30,7 +30,7 @@ contrast = 3.0
 image = image.enhance(contrast)
 # image = image.point(initTable(), '1') #3.降噪，图片二值化
 
-image.show()
+# image.show()
 # image.save('thumbnail.jpg', 'jpeg')
 
 
