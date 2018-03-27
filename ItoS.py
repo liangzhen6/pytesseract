@@ -20,7 +20,7 @@ def initTable(threshold=140):
 	return table
 
 
-image = Image.open('zw08.jpeg')
+# image = Image.open('zw08.jpeg')
 w, h = image.size
 print(w,h)
 image = image.convert('L') #将彩色图片转换成灰度图片
